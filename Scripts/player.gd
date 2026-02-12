@@ -6,6 +6,7 @@ extends CharacterBody2D
 var _walk_speed: float = 150.0
 var _run_speed: float = 200.0
 var _jump_speed: float = -400.0
+var _bone_speed: float = 1
 
 var spawn_point = Vector2.ZERO 
 var doing_pop = false
@@ -20,10 +21,10 @@ func _physics_process(delta: float) -> void:
 		velocity.y = _jump_speed
 
 	#dog movement
-	var _current_speed = _walk_speed
+	var _current_speed = _walk_speed * _bone_speed
 
 	if Input.is_action_pressed("run"):
-		_current_speed = _run_speed
+		_current_speed = _run_speed * _bone_speed
 
 	if Input.is_action_pressed("right"):
 		velocity.x = _current_speed
@@ -83,8 +84,7 @@ func do_pop():
 	make_checkpoint()
 	doing_pop = false
 		
-		
-		
-		
-		
-	
+
+#Whenever godog collects a bone, its speed increases
+func collect_bone():
+	_bone_speed += 0.3 #Change the value if the increase in speed seems too high
