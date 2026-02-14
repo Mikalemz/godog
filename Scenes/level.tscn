@@ -9,7 +9,7 @@
 
 [node name="map" parent="." unique_id=2079401206 instance=ExtResource("1_6phgx")]
 
-[node name="CharacterBody2D" parent="map" unique_id=1069223489 instance=ExtResource("2_81xng")]
+[node name="CharacterBody2D2" parent="map" unique_id=1069223489 instance=ExtResource("2_81xng")]
 position = Vector2(59.000004, 587)
 
 [node name="Bones" parent="map" unique_id=2093169596 instance=ExtResource("3_wqkje")]
