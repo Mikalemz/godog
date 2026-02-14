@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://b7lnhwuwx2qi7" path="res://Scenes/bones.tscn" id="3_wqkje"]
 [ext_resource type="PackedScene" uid="uid://ci015fcpd0p6m" path="res://Scenes/spikes.tscn" id="4_81xng"]
 
-[node name="level1" type="Node2D" unique_id=425330220]
+[node name="level" type="Node2D" unique_id=425330220]
 
 [node name="map" parent="." unique_id=2079401206 instance=ExtResource("1_6phgx")]
 
