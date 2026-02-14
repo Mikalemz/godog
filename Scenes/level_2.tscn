@@ -7,6 +7,8 @@
 [ext_resource type="TileSet" uid="uid://ccdpbfcvlao47" path="res://TileSet/forest.tres" id="5_uhnj4"]
 [ext_resource type="PackedScene" uid="uid://ci015fcpd0p6m" path="res://Scenes/spikes.tscn" id="6_cggpd"]
 [ext_resource type="PackedScene" uid="uid://cti67b57o2o2e" path="res://Scenes/player.tscn" id="7_055b2"]
+[ext_resource type="PackedScene" uid="uid://ovjddooi5ect" path="res://Scenes/dash.tscn" id="8_2mgoq"]
+[ext_resource type="PackedScene" uid="uid://b7lnhwuwx2qi7" path="res://Scenes/bones.tscn" id="9_uhnj4"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_42uki"]
 texture = ExtResource("4_2mgoq")
@@ -390,3 +392,9 @@ position = Vector2(127, 385)
 
 [node name="CharacterBody2D" parent="map" unique_id=1069223489 instance=ExtResource("7_055b2")]
 position = Vector2(87, 614)
+
+[node name="dash" parent="map" unique_id=616249072 instance=ExtResource("8_2mgoq")]
+position = Vector2(217, 365)
+
+[node name="Bones" parent="map" unique_id=2093169596 instance=ExtResource("9_uhnj4")]
+position = Vector2(36, 283)
