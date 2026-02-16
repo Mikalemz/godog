@@ -18,7 +18,8 @@ unique_name_in_owner = true
 position = Vector2(5.684342e-14, -10)
 scale = Vector2(0.49981245, 0.47949216)
 sprite_frames = ExtResource("1_v0iea")
-animation = &"idle"
+animation = &"bark"
+frame_progress = 0.25771204
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=853220777]
 shape = SubResource("RectangleShape2D_v0iea")

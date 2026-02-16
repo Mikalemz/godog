@@ -356,11 +356,12 @@ texture = ExtResource("4_2mgoq")
 [sub_resource type="TileSet" id="TileSet_t7v2y"]
 sources/0 = SubResource("TileSetAtlasSource_42uki")
 
-[node name="level" type="Node2D" unique_id=346611064 node_paths=PackedStringArray("win_interface", "all_bones")]
+[node name="level" type="Node2D" unique_id=346611064 node_paths=PackedStringArray("win_interface", "all_bones", "dog")]
 script = ExtResource("1_42uki")
 win_interface = NodePath("map/win_interface")
 all_bones = NodePath("map/Bones")
 next_level = "uid://bsdpbqn52g5ng"
+dog = NodePath("map/CharacterBody2D")
 
 [node name="map" type="Node2D" parent="." unique_id=1709864814]
 

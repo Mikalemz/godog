@@ -7,11 +7,12 @@
 [ext_resource type="PackedScene" uid="uid://ci015fcpd0p6m" path="res://Scenes/spikes.tscn" id="4_81xng"]
 [ext_resource type="PackedScene" uid="uid://bt704ttf2ep53" path="res://Scenes/interfaces/win_interface.tscn" id="6_0f350"]
 
-[node name="level" type="Node2D" unique_id=425330220 node_paths=PackedStringArray("win_interface", "all_bones")]
+[node name="level" type="Node2D" unique_id=425330220 node_paths=PackedStringArray("win_interface", "all_bones", "dog")]
 script = ExtResource("1_wqkje")
 win_interface = NodePath("win_interface")
 all_bones = NodePath("Bones")
 next_level = "uid://dlo8cbyu8lrqm"
+dog = NodePath("map/CharacterBody2D2")
 
 [node name="map" parent="." unique_id=2079401206 instance=ExtResource("1_6phgx")]
 

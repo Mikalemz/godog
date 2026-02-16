@@ -4,6 +4,7 @@ extends Node2D
 @export var win_interface : CanvasLayer
 @export var all_bones : Node2D 
 @export_file("menu.tscn") var next_level
+@export var dog : CharacterBody2D
 
 func _process(_delta):
 	if all_bones.get_child_count() == 0:
@@ -12,5 +13,6 @@ func _process(_delta):
 func change_level():
 	set_process(false) 
 	win_interface.show()
+	dog.get_node("AnimatedSprite2D").play("bark")
 	await get_tree().create_timer(2.0).timeout
 	get_tree().change_scene_to_file(next_level)
